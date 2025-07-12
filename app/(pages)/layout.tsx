@@ -4,14 +4,18 @@ import "../style/globals.css";
 
 interface RootLayoutProps {
   children: ReactNode;
+  modal: ReactNode;
 }
 
 const bodyClassName = `${geistSans.variable} ${geistMono.variable} antialiased`;
 
-const RootLayout = ({ children }: Readonly<RootLayoutProps>) => {
+const RootLayout = ({ children, modal }: Readonly<RootLayoutProps>) => {
   return (
     <html lang="en">
-      <body className={bodyClassName}>{children}</body>
+      <body className={bodyClassName}>
+        {modal}
+        {children}
+      </body>
     </html>
   );
 };

@@ -9,6 +9,7 @@ const HomePage = () => {
         <Link href="/nested">nested</Link>
         <Link href="/conditional">condiational</Link>
         <Link href="/tabs">tabs</Link>
+        <Link href="/modal">modal</Link>
       </div>
     </main>
   );
